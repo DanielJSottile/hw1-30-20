@@ -52,8 +52,17 @@ h1 {
     height: 100%;
 }
 
+.t-row {
+    display: table-row;
+}
+
+.t-col {
+    display: table-cell;
+    vertical-align: top;
+    padding: 50px;
+}
+
 hr {
-    display: block;
     color: rgb(161, 161, 161);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
