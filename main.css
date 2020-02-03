@@ -1,214 +1,212 @@
-    * {
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+iframe {
+    margin-top: 50px;
+}
+
+.background::before {
+    background-image: url(https://pbs.twimg.com/profile_banners/1175475143872790528/1579098633/1500x500);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+.fit-picture {
+    text-align: left;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 96px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.tablink {
+    background-color: rgb(255, 255, 255);
+    color: rgb(161, 161, 161);
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: 'Source Code Pro';
+    width: 25%;
+}
+
+.tablink:hover {
+    color: black;
+    background-color: rgb(255, 242, 166);
+    transition: 1.0s;
+}
+
+.tabcontent {
+    text-align: right;
+    color: rgb(31, 31, 31);
+    display: none;
+    padding: 100px 20px;
+    height: fit-content;
+}
+
+td {
+    width: 50%;
+}
+
+hr {
+    color: rgb(161, 161, 161);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+    font-size: 64px;
+    padding: 20px;
+}
+
+p {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    word-wrap: break-word;
+    width: 50%;
+    padding: 20px;
+}
+
+li {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+tab-picture {
+    padding-right: 50px;
+}
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    body,
-    html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        font-family: 'Raleway', sans-serif;
+    100% {
+        opacity: 1;
     }
-    
-    iframe {
-        margin-top: 50px;
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .background::before {
-        background-image: url(https://pbs.twimg.com/profile_banners/1175475143872790528/1579098633/1500x500);
-        background-size: cover;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -2;
-        opacity: 0.4;
+    100% {
+        opacity: 1;
     }
-    
-    .fit-picture {
-        text-align: left;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .header {
-        position: relative;
-        z-index: 1;
+    100% {
+        opacity: 1;
     }
-    
-    h1 {
-        font-family: 'Noto Sans', sans-serif;
-        color: white;
-        text-shadow: 2px 2px 4px black;
-        text-align: center;
-        margin-bottom: 0;
-        padding: 0;
-        font-size: 96px;
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    h2 {
-        font-family: 'Noto Sans', sans-serif;
-        color: white;
-        text-shadow: 2px 2px 4px black;
-        text-align: center;
-        margin-bottom: 0;
-        padding: 0;
+    100% {
+        opacity: 1;
     }
-    
-    .tablink {
-        background-color: rgb(255, 255, 255);
-        color: rgb(161, 161, 161);
-        float: right;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        font-size: 17px;
-        font-family: 'Source Code Pro';
-        width: 25%;
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    
-    .tablink:hover {
-        color: black;
-        background-color: rgb(255, 242, 166);
-        transition: 1.0s;
+    100% {
+        opacity: 1;
     }
-    
-    .tabcontent {
-        text-align: right;
-        color: rgb(31, 31, 31);
-        display: none;
-        padding: 100px 20px;
-        height: 100%;
-    }
-    
-    .t-row {
-        display: table-row;
-    }
-    
-    .t-col {
-        display: table-cell;
-        vertical-align: top;
-        padding: 50px;
-    }
-    
-    hr {
-        color: rgb(161, 161, 161);
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: inset;
-        border-width: 5px;
-    }
-    
-    h3 {
-        text-align: left;
-        color: black;
-        font-size: 64px;
-        padding-bottom: 30px;
-    }
-    
-    p {
-        text-align: left;
-        color: black;
-        font-size: 18px;
-        word-wrap: break-word;
-        width: 40%;
-        padding-bottom: 15px;
-    }
-    
-    li {
-        text-align: left;
-        color: black;
-        font-size: 18px;
-        word-wrap: break-word;
-        padding: 5px;
-    }
-    
-    .fade-in {
-        animation: fadeIn ease 1s;
-        -webkit-animation: fadeIn ease 1s;
-        -moz-animation: fadeIn ease 1s;
-        -o-animation: fadeIn ease 1s;
-        -ms-animation: fadeIn ease 1s;
-    }
-    
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-moz-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-o-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @-ms-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    #About {
-        background-color: wheat;
-    }
-    
-    #Region {
-        background-color: grey;
-    }
-    
-    #Characters {
-        background-color: silver;
-    }
-    
-    #Megas {
-        background-color: gainsboro;
-    }
-    
-    #AlternateForms {
-        background-color: azure;
-    }
-    
-    #Pokemon {
-        background-color: papayawhip;
-    }
-    
-    #Mechanics {
-        background-color: bisque;
-    }
-    
-    #Gigantamax {
-        background-color: cornsilk;
-    }
+}
+
+#About {
+    background-color: wheat;
+}
+
+#Region {
+    background-color: grey;
+}
+
+#Characters {
+    background-color: silver;
+}
+
+#Megas {
+    background-color: gainsboro;
+}
+
+#AlternateForms {
+    background-color: azure;
+}
+
+#Mechanics {
+    background-color: papayawhip;
+}
+
+#Pokemon {
+    background-color: bisque;
+}
+
+#Gigantamax {
+    background-color: cornsilk;
+}
