@@ -81,17 +81,11 @@ h2 {
     color: rgb(31, 31, 31);
     display: none;
     padding: 100px 20px;
-    height: 100%;
+    height: fit-content;
 }
 
-.t-row {
-    display: table-row;
-}
-
-.t-col {
-    display: table-cell;
-    vertical-align: top;
-    padding: 50px;
+td {
+    width: 50%;
 }
 
 hr {
@@ -108,7 +102,7 @@ h3 {
     text-align: left;
     color: black;
     font-size: 64px;
-    padding: 30px;
+    padding: 20px;
 }
 
 p {
@@ -116,7 +110,73 @@ p {
     color: black;
     font-size: 18px;
     word-wrap: break-word;
-    width: 40%;
+    width: 50%;
+    padding: 20px;
+}
+
+li {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+tab-picture {
+    padding-right: 50px;
+}
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #About {
@@ -143,7 +203,7 @@ p {
     background-color: papayawhip;
 }
 
-#Metagame {
+#Pokemon {
     background-color: bisque;
 }
 
